@@ -166,13 +166,18 @@
 .kalendar:hover .open {
     position: absolute;
     width: 272px;
-    height: 72px;
     background-color: white;
-    display: flex;
-    justify-content: center;
     z-index: 1;
     top: 39px;
     left: -40px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.kalendar:hover .open__btns {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .kalendar:hover .open::after {
@@ -184,7 +189,6 @@
     background-color: white;
     top: -8px;
     left: 48px;
-    
 }
 
 .time-date, .period {
@@ -218,6 +222,86 @@
     transform: translatex(-4px);
     padding: 10px 20px;
     margin: 16px 0;
+}
+
+.day {
+    display: none;
+}
+
+.kalendar:hover .day {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 22px 18px;
+    box-sizing: border-box;
+}
+
+.choice-day {
+    display: none;
+}
+
+.kalendar:hover .choice-day {
+    display: block;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    padding: 2px 10px 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.count,
+.weekday {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.count {
+    line-height: 17px;
+    font-size: 14px;
+}
+
+.weekday {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.red {
+    color: red;
+}
+
+
+.active {
+    color: #FFFFFF;
+    background: #55D287;
+    border-radius: 50%;
+}
+
+.disabled {
+    color: #D1D1D1;
+    background: #F2F2F2;
+    border: none;
+}
+
+.submit {
+    display: none;
+}
+
+.kalendar:hover .submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.set-time {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background: #2275D7;
+    border-radius: 1000px;
+    padding: 10px 20px;
+    margin: 16px 16px 16px;
+    border-color: transparent;
 }
 
 .icons-left {
