@@ -160,6 +160,64 @@
     display: flex;
     justify-content: space-between; 
     margin-bottom: 8px;
+    position: relative;
+}
+
+.kalendar:hover .open {
+    position: absolute;
+    width: 272px;
+    height: 72px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    top: 39px;
+    left: -40px;
+}
+
+.kalendar:hover .open::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    transform: rotate(45deg);
+    position: absolute;
+    background-color: white;
+    top: -8px;
+    left: 48px;
+    
+}
+
+.time-date, .period {
+    display: none;
+}
+
+.kalendar:hover .time-date {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background: #2275D7;
+    border-top-left-radius: 1000px;
+    border-bottom-left-radius: 1000px ;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    margin: 16px 0;
+}
+
+.kalendar:hover .period {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2275D7;
+    background: #FFFFFF;
+    border-top-right-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    border: 1px solid #2275D7;
+    transform: translatex(-4px);
+    padding: 10px 20px;
+    margin: 16px 0;
 }
 
 .icons-left {
@@ -179,6 +237,11 @@
 .kalendar {
     background-image: url(img/kalendar.png);
     margin-right: 4px;
+}
+
+.kalendar:hover {
+    background-color: #2275D7;
+    background-image: url(img/kalendar-white.png);
 }
 
 .drop {
