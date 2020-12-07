@@ -344,6 +344,7 @@
 .submit:hover .set-time {
     background-color: rgb(207, 203, 203);
     color: #2275D7;
+    cursor: pointer;
 }
 
 .colon {
@@ -373,6 +374,7 @@
 .kalendar:hover {
     background-color: #2275D7;
     background-image: url(img/kalendar-white.png);
+    cursor: pointer;
 }
 
 .drop {
