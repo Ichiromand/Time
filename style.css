@@ -375,6 +375,8 @@
     background-color: #2275D7;
     background-image: url(img/kalendar-white.png);
     cursor: pointer;
+    transition: background-color 0.5s linear, background-image 0.5s linear;
+    
 }
 
 .drop {
@@ -384,6 +386,7 @@
 .drop:hover {
     background-image: url(img/drop2.png);
     background-color: #2275D7;
+    transition: background-color 0.5s linear, background-image 0.5s linear;
 }
 
 .x {
@@ -398,6 +401,7 @@
 
 .x:hover {
     background-color: #2275D7;
+    transition: background-color 0.5s linear;
 }
 
 .time {
@@ -476,5 +480,6 @@
     background-color: #2275D7;
     color: white;
     cursor: pointer;
+    transition: background-color 0.5s linear, color 0.5s linear;
 }
 
